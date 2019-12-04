@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-copy",
-    "version": "0.0.2",
+    "version": "0.0.3-0",
     "description": "A utility for copying files or directories",
     "main": "build",
     "scripts": {
@@ -47,6 +47,7 @@
         "vamtiger-remove": "0.0.5"
     },
     "dependencies": {
+        "rollup": "^1.27.8",
         "vamtiger-copy-file": "0.0.9",
         "vamtiger-create-directory": "0.0.5",
         "vamtiger-create-file": "0.0.10",
