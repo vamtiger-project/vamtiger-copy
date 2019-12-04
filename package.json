@@ -1,8 +1,8 @@
 {
     "name": "vamtiger-copy",
-    "version": "0.0.3",
+    "version": "0.0.4-0",
     "description": "A utility for copying files or directories",
-    "main": "build",
+    "main": "build/vamtiger-copy",
     "scripts": {
         "test": "npm run build && npm run mocha",
         "mocha": "mocha build/test --recursive",
