@@ -11,7 +11,7 @@
         "mocha": "mocha build/test --recursive",
         "build": "tsc",
         "commit": "npm run bundle && vamtiger-node-typescript-commit --push --publish --buildScript bundle",
-        "clean-bundle": "vamtiger-remove -d build -p \"(vamtiger-copy)\\\\.(js(.map)?|d.ts)\"",
+        "clean-bundle": "vamtiger-remove -d build -p \"(vamtiger-copy|copy|get-grouped-folders)\\\\.(js(.map)?|d.ts)\" && rm -rf build/test",
         "clean": "rm -rf build/*",
         "bundle-source": "vamtiger-bundle-typescript --relativePath --entryFilePath source/vamtiger-copy.ts --bundleFilePath build/vamtiger-copy.js --format cjs --sourcemap true --copySourceMap --minify --bin",
         "bundle": "npm test && npm run clean && npm run build && npm run bundle-source && npm run clean-bundle",
