@@ -10,7 +10,8 @@ const destination = args.get(CommandlineArguments.destination)
     || args.get(ShortCommandlineArguments.destination);
 const exclude = args.get(CommandlineArguments.exclude)
     || args.get(ShortCommandlineArguments.exclude);
-const help = !(source && destination);
+const help = args.get(CommandlineArguments.help)
+    || args.get(ShortCommandlineArguments.help);
 
 if (help) {
     logHelp();
