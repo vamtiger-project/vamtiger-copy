@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-copy",
-    "version": "0.0.6-0",
+    "version": "0.0.6",
     "description": "A utility for copying files or directories",
     "main": "build/vamtiger-copy",
     "bin": {
